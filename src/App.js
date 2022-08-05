@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { useTheme } from "./hooks/useTheme";
+
+//Pages Components
+import Home from "./pages/Home/Home";
+import Resume from "./pages/Resume/Resume";
+import Portfolio from "./pages/Portfolio/Portfolio";
+
+//App Components
+import NavBar from "./components/NavBar";
+
 
 function App() {
+
+  const { mode } = useTheme();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${mode}`}>
+      <BrowserRouter>
+        <NavBar />
+        <Switch>
+          <Route path="/resume" component={Resume} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

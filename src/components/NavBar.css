@@ -1,0 +1,94 @@
+.navbar {
+  padding: 10px 20px;
+  background: #16BFFD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+.navbar a.brand {
+  margin-right: auto;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.navbar a:not(:first-child) {
+  color: #eee;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  height: 100%;
+  font-weight: 500;
+  transition: font-size .3s ease-in-out;
+  position:relative;
+  
+}
+.navbar a:not(:first-child):hover {
+  font-weight: 700;
+  font-size: larger;
+  transition: font-weight .3s ease-in-out;
+}
+
+.navbar a:not(.brand).active {
+  font-weight: 600;
+  font-size: larger;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+
+}
+
+.dark-mode-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.flip-dark {
+  transform: rotate(180deg);
+  transition: ease-in-out 0.3s;
+}
+
+.flip-light {
+  transform: rotate(0deg);
+  transition: ease-in-out 0.3s;
+}
+
+.dark-nav-theme {
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: rgba(180, 180, 180, 0.2) 0px 7px 29px 0px;
+}
+
+/* Media query to resize the brand */
+@media screen and (max-width: 680px) {
+  .navbar a.brand {
+    font-size: .75rem;
+  }
+
+  .navbar a:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.dark-nav-theme a:not(:first-child) {
+  transition: color .03s ease;
+  color: #888;
+}
+
+.dark-nav-theme a:not(.brand).active {
+  border: 2px solid #444;
+  color: #e6e6e6;
+}
+
