@@ -14,17 +14,13 @@
 .dark-skills {
     /* background-color: #444; */
     border-radius: 20px;
-    padding: 1em;
-    margin: 3em 1em;
     
 }
 
 @media screen and (max-width: 680px) {
-    .skill {
-        flex-direction: column;
-    }
-
-    .dark-skills {
-        box-shadow: none;
+    .skills {
+      width: min-content;
+      flex-direction: column;
     }
   }
+
