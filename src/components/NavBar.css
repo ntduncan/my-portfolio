@@ -20,6 +20,11 @@
   font-size: 1em;
 }
 
+.nav-icon {
+  width: 30px;
+  height: 30px;
+}
+
 .navbar a:not(:first-child) {
   color: #eee;
   text-decoration: none;
@@ -76,11 +81,24 @@ box-shadow: rgba(180, 180, 180, 0.2) 0px 7px 29px 0px;
   .navbar a.brand {
     font-size: .75rem;
   }
-
-  .navbar a:not(:first-child) {
+   
+  .navbar a:not(.brand).active,
+  .navbar a:not(:first-child):hover {
+    font-size: medium;
+  }
+  
+  .navbar a:not(:first-child)
+   {
     margin-left: 10px;
+    font-size: small;
+  }
+
+  .nav-icon {
+    height: 20px;
+    width: 20px;
   }
 }
+
 
 .dark-nav-theme a:not(:first-child) {
   transition: color .03s ease;

@@ -12,3 +12,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.rotate {
+  animation: rotate 4s linear infinite;
+}
+
+.wiggle {
+  animation: wiggle 1.25s infinite;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+      
+  }
+  
+  100% {
+      transform: rotate(360deg);
+      
+  }
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      
+  }
+  50% {
+      transform: scale(1.1);
+      
+  }
+  100% {
+      transform: scale(1);
+      
+  }
+}
+
+@keyframes wiggle {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
