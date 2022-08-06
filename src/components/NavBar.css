@@ -76,6 +76,17 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 box-shadow: rgba(180, 180, 180, 0.2) 0px 7px 29px 0px;
 }
 
+
+.dark-nav-theme a:not(:first-child) {
+  transition: color .03s ease;
+  color: #888;
+}
+
+.dark-nav-theme a:not(.brand).active {
+  border: 2px solid #444;
+  color: #e6e6e6;
+}
+
 /* Media query to resize the brand */
 @media screen and (max-width: 680px) {
   .navbar a.brand {
@@ -93,20 +104,49 @@ box-shadow: rgba(180, 180, 180, 0.2) 0px 7px 29px 0px;
     font-size: small;
   }
 
+  .nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .nav-icon {
     height: 20px;
     width: 20px;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .nav-icons {
+    position: absolute;
+    left: -30px;
+    top: 0px;
+  }
 
-.dark-nav-theme a:not(:first-child) {
-  transition: color .03s ease;
-  color: #888;
-}
+  .navbar a.brand {
+    font-size: .75rem;
+    text-align: left;
+    padding-top: 25px;
+    margin-left: -10px;
+  }
 
-.dark-nav-theme a:not(.brand).active {
-  border: 2px solid #444;
-  color: #e6e6e6;
-}
+  .navbar a:not(.brand):first{
+    margin-left: -10px;
+  }
+  
+  .navbar a:not(.brand).active,
+  .navbar a:not(:first-child):hover {
+    font-size: small;
+  }
+  
+  .navbar a:not(:first-child)
+   {
+    margin-left: 5px;
+    font-size: small;
+  }
+}   
+  
+
+
 

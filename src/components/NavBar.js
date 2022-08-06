@@ -35,22 +35,23 @@ export default function NavBar() {
         <NavLink to="/portfolio">Portfolio</NavLink>
         <NavLink to="/resume">Resume</NavLink>
 
-        <div>
-          <img
-            src={moon}
-            alt="dark mode icon"
-            className={`nav-icon dark-mode-icon ${
-              mode === "dark" ? "flip-dark" : "flip-light"
-            }`}
-            onClick={toggleMode}
-          />
+        <div className="nav-icons">
+          
+            <img
+              src={moon}
+              alt="dark mode icon"
+              className={`nav-icon dark-mode-icon ${
+                mode === "dark" ? "flip-dark" : "flip-light"
+              }`}
+              onClick={toggleMode}
+            />
+          <a href="https://www.linkedin.com/in/nate-duncan/" target="_window">
+            <img src={linkedInLogo} alt="linkedin icon" className="nav-icon" />
+          </a>
+          <a href="https://www.github.com/ntduncan/" target="_window">
+            <img src={githubLogo} alt="linkedin icon" className="nav-icon" />
+          </a>
         </div>
-        <a href="https://www.linkedin.com/in/nate-duncan/" target="_window">
-          <img src={linkedInLogo} alt="linkedin icon" className="nav-icon"  />
-        </a>
-        <a href="https://www.github.com/ntduncan/" target="_window">
-          <img src={githubLogo} alt="linkedin icon" className="nav-icon" />
-        </a>
       </nav>
     </div>
   );
