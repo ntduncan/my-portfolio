@@ -1,0 +1,73 @@
+.download-btn {
+  font-weight: 600;
+  font-size: larger;
+  border: 2px solid #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 2rem;
+}
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+    padding: 1rem;
+    /* box-shadow: rgba(97, 97, 97, 0.2) 0px 8px 24px; */
+    text-align: left;
+}
+.job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+}
+.job-company {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+    font-style: italic;
+}
+
+.responsibilities {
+    margin-bottom: 50px;
+    list-style: none;
+    text-align: left;
+}
+
+.responsibilities li::before {
+    content: "-";
+    margin-right: 10px;
+}
+
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+    padding: 1rem;
+    /* box-shadow: rgba(97, 97, 97, 0.2) 0px 8px 24px; */
+}
+
+.education, .work-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+    padding: 1rem;
+    /* box-shadow: rgba(97, 97, 97, 0.2) 0px 8px 24px; */
+    text-align: left;
+}
+
+
