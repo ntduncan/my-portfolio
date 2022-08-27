@@ -19,7 +19,7 @@ const themeReducer = (state, action) => {
 //Create a provider component
 export function ThemeProvider({ children }) {
   const [state, dispatch] = useReducer(themeReducer, {
-    mode: "dark",
+    mode: "light",
   });
 
   

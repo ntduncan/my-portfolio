@@ -49,6 +49,11 @@ export default function Home() {
     {
       title: ".NET",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/150px-Microsoft_.NET_logo.svg.png",
+      animation: "",
+    },
+    {
+      title: "Vue",
+      src: "https://imgs.search.brave.com/k7hByVHf6JyKnYu6wHao8ziaaAjTVp__eJACWjeHuxI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvdnVl/LTktbG9nby1wbmct/dHJhbnNwYXJlbnQu/cG5n",
       animation: "wiggle",
     },
   ];
