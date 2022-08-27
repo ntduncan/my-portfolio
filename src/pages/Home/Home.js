@@ -82,9 +82,9 @@ export default function Home() {
       </div>
       <div className="body">
         <p className="introduction">
-          I am a software engineer in the United States based in the beautiful state of{" "}
-          <span className="city">Idaho</span>. I enjoy building asthetically
-          pleasing, responsive websites and full stack applications.
+          I am a software developer in the United States based in the beautiful state of{" "}
+          <span className="city">Idaho</span>. I have professional experience doing backend work in both Java and JavaScipt. My passion is web dev and I enjoy building asthetically
+          pleasing, responsive websites and full stack applications!
         </p>
         <div className="tech-info">
           <TechSkills skills={skills} />
